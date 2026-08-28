@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.display { font-family: 'Fraunces', serif; }
+.mono { font-family: 'Space Mono', monospace; }
+
+.grid-cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 28px;
+}
+
+@media (max-width: 760px) {
+  .grid-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid #2F6F4E;
+  outline-offset: 2px;
+}
